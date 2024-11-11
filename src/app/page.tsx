@@ -15,6 +15,8 @@ export default function Home() {
       <Link href="/profile">Go to Profile</Link>
       <br />
       <Link href="/dashboard">Go to Dashboard</Link>
+      <br />
+      <Link href="/complexDashboard">Go to Complex Dashboard</Link>
     </>
   );
 }
