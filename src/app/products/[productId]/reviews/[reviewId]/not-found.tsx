@@ -1,3 +1,3 @@
 export default function ReviewsNotFound() {
-  return <h1>Reviews not found.</h1>;
+  return <h1>Review not found.</h1>;
 }

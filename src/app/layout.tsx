@@ -1,20 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
 export const metadata: Metadata = {
-  title: "Next JS Learning",
+  title: {
+    default: "Next JS Learning",
+    template: "%s | Next JS",
+  },
   description: "This package is for learning Next JS.",
 };
 
@@ -25,10 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+        <header className="h-20 bg-cyan-600 text-white">This is header.</header>
         {children}
+        <footer className="h-20 bg-orange-600 text-white">
+          This is footer.
+        </footer>
       </body>
     </html>
   );
