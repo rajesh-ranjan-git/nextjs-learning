@@ -25,13 +25,17 @@ export default function DashboardLayout({
   users,
   revenue,
   notifications,
+  login,
 }: {
   children: React.ReactNode;
   users: React.ReactNode;
   revenue: React.ReactNode;
   notifications: React.ReactNode;
+  login: React.ReactNode;
 }) {
-  return (
+  const isLoggedIn = true;
+
+  return isLoggedIn ? (
     <>
       <div>{children}</div>{" "}
       {/* complexDashboard/@children/page.tsx is a slot so technically we have 4 slots in layout.tsx file */}
@@ -43,5 +47,7 @@ export default function DashboardLayout({
         <div style={{ display: "flex", flex: 1 }}>{notifications}</div>
       </div>
     </>
+  ) : (
+    login
   );
 }
