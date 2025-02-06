@@ -1,7 +1,26 @@
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-const ProductDetails = ({ params }: { params: { productId: number } }) => {
-  if (params.productId > 10) {
+type Props = {
+  params: {
+    productId: number;
+  };
+};
+
+export const generateMetadata = async ({
+  params,
+}: Props): Promise<Metadata> => {
+  const title = await new Promise((resolve) => {
+    resolve(`iPhone ${params.productId}`);
+  });
+
+  return {
+    title: `Product ${title}`,
+  };
+};
+
+const ProductDetails = ({ params }: Props) => {
+  if (params.productId > 16) {
     notFound();
   }
 

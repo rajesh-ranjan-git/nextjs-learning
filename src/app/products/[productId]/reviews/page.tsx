@@ -1,7 +1,13 @@
 import { notFound } from "next/navigation";
 
-const Reviews = ({ params }: { params: { productId: number } }) => {
-  if (params.productId > 10) {
+type Props = { params: { productId: number } };
+
+export const generateMetadata = ({ params }: Props) => {
+  return { title: `iPhone ${params.productId} Review` };
+};
+
+const Reviews = ({ params }: Props) => {
+  if (params.productId > 16) {
     notFound();
   }
 
