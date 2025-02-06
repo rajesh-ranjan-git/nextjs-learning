@@ -1,9 +1,9 @@
-const Documentation = () => {
+const FeatureNotFound = () => {
   return (
     <div className="flex justify-center items-center w-screen h-[62vh] text-5xl">
-      Documentation
+      Feature Not Found!
     </div>
   );
 };
 
-export default Documentation;
+export default FeatureNotFound;
