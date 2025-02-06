@@ -14,7 +14,7 @@ const ReviewDetails = ({
   }
 
   return (
-    <div className="flex justify-center items-center w-screen h-[62vh] text-5xl">
+    <div className="flex justify-center items-center w-screen h-[52vh] text-5xl">
       Review {params.reviewId} for Product {params.productId}
     </div>
   );
