@@ -13,7 +13,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col items-center w-screen h-[54vh] text-5xl">
+    <div className="flex flex-col items-center w-screen h-[56vh] text-5xl">
       <h1 className="my-auto align-middle">Welcome to next JS Learning!</h1>
     </div>
   );

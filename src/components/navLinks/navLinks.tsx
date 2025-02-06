@@ -48,7 +48,15 @@ const NavLinks = () => {
                 : item.toLowerCase()
             }`}
             key={item}
-            className="hover:bg-white p-2 border border-black rounded-lg hover:text-black"
+            className={`hover:bg-white p-2 border border-black rounded-lg hover:text-black ${
+              path.includes(
+                item.toLowerCase() === "forgot password"
+                  ? "forgotPassword"
+                  : item.toLowerCase()
+              )
+                ? "bg-slate-600"
+                : ""
+            }`}
           >
             {item}
           </Link>
