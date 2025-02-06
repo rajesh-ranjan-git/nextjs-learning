@@ -5,11 +5,7 @@ export const metadata: Metadata = {
 };
 
 const Dashboard = () => {
-  return (
-    <div className="flex justify-center items-center w-screen h-[56vh] text-5xl">
-      Dashboard
-    </div>
-  );
+  return <h1 className="text-5xl">Dashboard</h1>;
 };
 
 export default Dashboard;
