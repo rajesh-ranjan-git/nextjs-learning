@@ -23,7 +23,7 @@ const Docs = ({ params }: { params: { slug: String[] } }) => {
   }
 
   return (
-    <div className="flex justify-center items-center w-screen h-[62vh] text-5xl">
+    <div className="flex justify-center items-center w-screen h-[54vh] text-5xl">
       Documentation Page
     </div>
   );
