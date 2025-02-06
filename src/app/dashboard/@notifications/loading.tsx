@@ -1,5 +1,7 @@
+import Card from "@/components/card/card";
+
 const Loading = () => {
-  return <div>Loading...</div>;
+  return <Card>Loading...</Card>;
 };
 
 export default Loading;

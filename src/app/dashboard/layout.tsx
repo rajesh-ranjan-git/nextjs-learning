@@ -3,13 +3,17 @@ const DashboardLayout = ({
   notifications,
   revenue,
   users,
+  checkAuth,
 }: {
   children: React.ReactNode;
   notifications: React.ReactNode;
   revenue: React.ReactNode;
   users: React.ReactNode;
+  checkAuth: React.ReactNode;
 }) => {
-  return (
+  const isAuthenticated = false;
+
+  return isAuthenticated ? (
     <div className="flex flex-col items-center w-screen h-[56vh] text-2xl">
       {children}
       <div className="flex m-4">
@@ -19,6 +23,10 @@ const DashboardLayout = ({
         </div>
         <div className="flex flex-1">{notifications}</div>
       </div>
+    </div>
+  ) : (
+    <div className="flex justify-center items-center w-screen h-[56vh] text-2xl">
+      {checkAuth}
     </div>
   );
 };
