@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+"use client";
+
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -8,19 +9,17 @@ type Props = {
   };
 };
 
-export const generateMetadata = async ({
-  params,
-}: Props): Promise<Metadata> => {
-  const title = await new Promise((resolve) => {
-    resolve(`iPhone ${params.productId}`);
-  });
-
-  return {
-    title: `${title}`,
-  };
+const getRandomNumber = (count: number) => {
+  return Math.floor(Math.random() * count);
 };
 
 const ProductDetails = ({ params }: Props) => {
+  const randomNumber = getRandomNumber(2);
+
+  if (randomNumber === 1) {
+    throw new Error("Error occurred while loading product details!");
+  }
+
   if (params.productId > 16) {
     notFound();
   }

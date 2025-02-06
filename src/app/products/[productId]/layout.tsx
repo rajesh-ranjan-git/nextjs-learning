@@ -1,4 +1,22 @@
-import React from "react";
+import { Metadata } from "next";
+
+type Props = {
+  params: {
+    productId: number;
+  };
+};
+
+export const generateMetadata = async ({
+  params,
+}: Props): Promise<Metadata> => {
+  const title = await new Promise((resolve) => {
+    resolve(`iPhone ${params.productId}`);
+  });
+
+  return {
+    title: `${title}`,
+  };
+};
 
 const ProductLayout = ({
   params,

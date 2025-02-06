@@ -6,7 +6,17 @@ export const generateMetadata = ({ params }: Props) => {
   return { title: `iPhone ${params.productId} Review ${params.reviewId}` };
 };
 
+const getRandomNumber = (count: number) => {
+  return Math.floor(Math.random() * count);
+};
+
 const ReviewDetails = ({ params }: Props) => {
+  const randomNumber = getRandomNumber(2);
+
+  if (randomNumber === 1) {
+    throw new Error("Error occurred while loading review details!");
+  }
+
   if (params.productId > 16) {
     notFound();
   }
