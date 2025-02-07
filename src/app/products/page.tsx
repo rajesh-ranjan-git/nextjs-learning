@@ -19,7 +19,7 @@ const Products = () => {
     "Product 16",
   ];
   return (
-    <div className="flex flex-col justify-center items-center w-screen h-[56vh]">
+    <div className="flex flex-col justify-center items-center h-[56vh]">
       <h1 className="p-2 text-5xl align-middle">Products Page</h1>
       <div className="flex flex-wrap justify-center items-center gap-2 m-4 w-1/3 text-2xl">
         {productsList.map((productItem) => (

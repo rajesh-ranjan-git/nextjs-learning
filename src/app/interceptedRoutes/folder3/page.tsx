@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const Folder3 = () => {
   return (
-    <div className="flex flex-col justify-around items-center w-screen h-[56vh] text-5xl">
+    <div className="flex flex-col justify-around items-center h-[56vh] text-5xl">
       <h1>Folder 3</h1>
-      <div className="flex justify-center items-center gap-10 w-screen text-2xl">
+      <div className="flex justify-center items-center gap-10 text-2xl">
         <Link
           href={"/folder1"}
           className="hover:border-white bg-white hover:bg-black p-2 border rounded-lg text-black hover:text-white transition-all ease-in-out"

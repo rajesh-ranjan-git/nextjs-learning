@@ -16,7 +16,7 @@ const ReviewDetails = ({ params }: Props) => {
   }
 
   return (
-    <div className="flex justify-center items-center w-screen h-[43.5vh] text-5xl">
+    <div className="flex justify-center items-center h-[43.5vh] text-5xl">
       Review {params.reviewId} for iPhone {params.productId}
     </div>
   );

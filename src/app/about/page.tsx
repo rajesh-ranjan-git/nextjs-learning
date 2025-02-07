@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center w-screen h-[56vh] text-5xl">
+    <div className="flex justify-center items-center h-[56vh] text-5xl">
       About Page
     </div>
   );

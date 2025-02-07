@@ -27,8 +27,8 @@ const ProductLayout = ({
 }) => {
   return (
     <>
-      {children},
-      <div className="flex justify-center items-center p-5 border-t-2 w-screen text-5xl">
+      {children}
+      <div className="flex justify-center items-center p-5 border-t-2 text-5xl">
         Product {params.productId}
       </div>
     </>

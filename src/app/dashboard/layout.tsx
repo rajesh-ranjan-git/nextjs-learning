@@ -14,7 +14,7 @@ const DashboardLayout = ({
   const isAuthenticated = true;
 
   return isAuthenticated ? (
-    <div className="flex flex-col items-center w-screen h-[56vh] text-2xl">
+    <div className="flex flex-col items-center text-2xl">
       {children}
       <div className="flex m-4">
         <div className="flex flex-col">
@@ -25,9 +25,7 @@ const DashboardLayout = ({
       </div>
     </div>
   ) : (
-    <div className="flex justify-center items-center w-screen h-[56vh] text-2xl">
-      {checkAuth}
-    </div>
+    <div className="flex justify-center items-center text-2xl">{checkAuth}</div>
   );
 };
 

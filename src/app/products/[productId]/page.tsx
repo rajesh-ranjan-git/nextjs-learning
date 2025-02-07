@@ -38,7 +38,7 @@ const ProductDetails = ({ params }: Props) => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-screen h-[43.5vh]">
+    <div className="flex flex-col justify-center items-center h-[43.5vh]">
       <h1 className="p-2 text-5xl align-middle">
         Product Details for Product : {params.productId}
       </h1>
