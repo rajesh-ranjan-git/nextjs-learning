@@ -16,6 +16,7 @@ const NavLinks = () => {
     "Docs",
     "Products",
     "Intercepted Routes",
+    "Photo Feed",
   ];
 
   const handleBack = () => {
@@ -48,6 +49,8 @@ const NavLinks = () => {
                 ? "forgotPassword"
                 : item.toLowerCase() === "intercepted routes"
                 ? "interceptedRoutes"
+                : item.toLowerCase() === "photo feed"
+                ? "photoFeed"
                 : item.toLowerCase()
             }`}
             key={item}
