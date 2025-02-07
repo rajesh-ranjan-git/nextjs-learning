@@ -15,6 +15,7 @@ const NavLinks = () => {
     "About",
     "Docs",
     "Products",
+    "Intercepted Routes",
   ];
 
   const handleBack = () => {
@@ -45,6 +46,8 @@ const NavLinks = () => {
             href={`/${
               item.toLowerCase() === "forgot password"
                 ? "forgotPassword"
+                : item.toLowerCase() === "intercepted routes"
+                ? "interceptedRoutes"
                 : item.toLowerCase()
             }`}
             key={item}

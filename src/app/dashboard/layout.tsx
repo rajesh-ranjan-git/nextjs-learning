@@ -11,7 +11,7 @@ const DashboardLayout = ({
   users: React.ReactNode;
   checkAuth: React.ReactNode;
 }) => {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
 
   return isAuthenticated ? (
     <div className="flex flex-col items-center w-screen h-[56vh] text-2xl">
