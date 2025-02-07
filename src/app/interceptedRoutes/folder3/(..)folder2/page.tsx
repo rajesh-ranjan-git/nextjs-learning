@@ -1,9 +1,9 @@
-const Folder12 = () => {
+const InterceptedFolder2 = () => {
   return (
     <div className="flex justify-center items-center w-screen h-[56vh] text-5xl">
-      Folder 12
+      Intercepted Route for Folder 2
     </div>
   );
 };
 
-export default Folder12;
+export default InterceptedFolder2;

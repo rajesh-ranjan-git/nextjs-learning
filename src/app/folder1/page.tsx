@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-const Folder2 = () => {
+const Folder1 = () => {
   return (
     <div className="flex flex-col justify-around items-center w-screen h-[56vh] text-5xl">
-      <h1>Folder 2</h1>
+      <h1>Folder 1</h1>
     </div>
   );
 };
 
-export default Folder2;
+export default Folder1;
