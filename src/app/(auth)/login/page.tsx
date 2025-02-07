@@ -6,9 +6,7 @@ export const metadata: Metadata = {
 
 const Login = () => {
   return (
-    <div className="flex justify-center items-center w-screen text-5xl">
-      Login Page
-    </div>
+    <div className="flex justify-center items-center text-5xl">Login Page</div>
   );
 };
 
