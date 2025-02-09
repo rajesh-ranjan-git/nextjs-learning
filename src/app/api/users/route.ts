@@ -1,3 +1,3 @@
-export const GET = async () => {
+export const GET = () => {
   return new Response("Users Data.");
 };
